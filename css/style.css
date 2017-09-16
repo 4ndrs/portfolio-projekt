@@ -12,7 +12,10 @@ body {
     background: linear-gradient(to top right, white, #f3f3f3);
 }
 
-.link-muted, .link-muted:link, .link-muted:hover, .link-muted:visited {
+.link-muted,
+.link-muted:link,
+.link-muted:hover,
+.link-muted:visited {
     color: #ccc7c7;
     cursor: pointer;
     text-decoration: none;
