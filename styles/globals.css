@@ -16,10 +16,6 @@
   --miku-color-four: #2d858d;
 }
 
-body {
-  background-color: var(--dark-background);
-}
-
 a {
   color: var(--miku-color-two);
   text-decoration: none;
