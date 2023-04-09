@@ -1,0 +1,14 @@
+.footer {
+  padding: 17px;
+  background-color: var(--dark-background);
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heart {
+  color: var(--miku-color-three);
+}
