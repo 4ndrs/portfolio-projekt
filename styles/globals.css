@@ -9,14 +9,19 @@
   --padding-top: 22px;
   --padding-bottom: 17px;
   --padding-sides: 28px;
+
+  --miku-color-one: #75e3d1;
+  --miku-color-two: #43a0b1;
+  --miku-color-three: #46bfcc;
+  --miku-color-four: #2d858d;
 }
 
 a {
-  color: #43a0b1;
+  color: var(--miku-color-two);
   text-decoration: none;
   font-weight: 500;
 }
 
 a:hover {
-  color: #46bfcc;
+  color: var(--miku-color-three);
 }
