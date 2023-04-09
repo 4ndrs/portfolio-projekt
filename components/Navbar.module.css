@@ -1,0 +1,24 @@
+.header {
+  background-color: var(--dark-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-top) var(--padding-sides) var(--padding-bottom)
+    var(--padding-sides);
+}
+
+.homeLink {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  gap: 9px;
+}
+
+.miku {
+  border-radius: 999px;
+}
