@@ -1,14 +1,12 @@
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
+import Layout from "@/components/Layout";
 
 import type { AppProps } from "next/app";
 
-const inter = Inter({ subsets: ["latin"] });
-
 const App = ({ Component, pageProps }: AppProps) => (
-  <main className={inter.className}>
+  <Layout>
     <Component {...pageProps} />
-  </main>
+  </Layout>
 );
 
 export default App;
