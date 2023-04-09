@@ -3,3 +3,12 @@
   padding: 0;
   margin: 0;
 }
+
+a {
+  color: #43a0b1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #46bfcc;
+}
