@@ -4,9 +4,17 @@
   margin: 0;
 }
 
+:root {
+  --dark-background: #36353d;
+  --padding-top: 22px;
+  --padding-bottom: 17px;
+  --padding-sides: 28px;
+}
+
 a {
   color: #43a0b1;
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
