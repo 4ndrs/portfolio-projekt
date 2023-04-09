@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-background);
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+}
+
+.highlight {
+  color: var(--miku-color-two);
+}

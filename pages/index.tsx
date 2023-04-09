@@ -1,5 +1,7 @@
 import Head from "next/head";
+
 import UnderConstruction from "@/components/UnderConstruction";
+import Hero from "@/components/Hero";
 
 const Home = () => (
   <>
@@ -9,9 +11,10 @@ const Home = () => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main>
+    <Hero />
+    <section>
       <UnderConstruction />
-    </main>
+    </section>
   </>
 );
 
