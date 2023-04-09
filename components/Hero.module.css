@@ -24,6 +24,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  font-size: 20px;
   color: var(--miku-color-three);
   stroke: var(--miku-color-three);
 }
