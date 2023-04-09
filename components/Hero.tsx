@@ -1,3 +1,6 @@
+import Link from "next/link";
+import ChevronSVG from "./ChevronSVG";
+
 import styles from "./Hero.module.css";
 
 const Hero = () => (
@@ -6,6 +9,10 @@ const Hero = () => (
       Hi, I&apos;m <span className={styles.highlight}>Andres</span>
       <br />A Software <span className={styles.highlight}>Developer</span>
     </h1>
+    <Link href="#" className={styles.cta}>
+      scroll down
+      <ChevronSVG width={65} height={24} />
+    </Link>
   </section>
 );
 
