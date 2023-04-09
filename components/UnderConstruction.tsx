@@ -4,10 +4,10 @@ import styles from "./UnderConstruction.module.css";
 import mikuCrying from "@/assets/miku_crying.jpg";
 
 const UnderConstruction = () => (
-  <div className={styles.container}>
+  <section className={styles.container}>
     <h1 className={styles.text}>Under construction</h1>
     <Image src={mikuCrying} alt="Picture of Miku crying" placeholder="blur" />
-  </div>
+  </section>
 );
 
 export default UnderConstruction;
