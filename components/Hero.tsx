@@ -9,7 +9,7 @@ const Hero = () => (
       Hi, I&apos;m <span className={styles.highlight}>Andres</span>
       <br />A Software <span className={styles.highlight}>Developer</span>
     </h1>
-    <Link href="#" className={styles.cta}>
+    <Link href="/#skills" scroll={false} className={styles.cta}>
       scroll down
       <ChevronSVG width={65} height={24} />
     </Link>

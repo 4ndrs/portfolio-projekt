@@ -18,13 +18,19 @@ const Navbar = () => (
       </Link>
       <menu className={styles.menu}>
         <li>
-          <Link href="/#skills">Skills</Link>
+          <Link href="/#skills" scroll={false}>
+            Skills
+          </Link>
         </li>
         <li>
-          <Link href="/#projects">Projects</Link>
+          <Link href="/#projects" scroll={false}>
+            Projects
+          </Link>
         </li>
         <li>
-          <Link href="/#contact">Contact</Link>
+          <Link href="/#contact" scroll={false}>
+            Contact
+          </Link>
         </li>
       </menu>
     </nav>
