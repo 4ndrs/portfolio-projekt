@@ -4,7 +4,7 @@ import HeartSVG from "./HeartSVG";
 const Footer = () => (
   <footer className={styles.footer}>
     <div>
-      Made with <HeartSVG /> by me!
+      Made with <HeartSVG className={styles.heart} /> by me!
     </div>
     <div>
       Source code on{" "}

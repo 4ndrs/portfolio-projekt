@@ -10,5 +10,6 @@
 }
 
 .heart {
-  color: var(--miku-color-three);
+  position: relative;
+  top: 3px;
 }
