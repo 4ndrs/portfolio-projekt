@@ -9,6 +9,7 @@ const Project = z.object({
   description: z.string(),
   pseudoImageFirst: z.string(),
   pseudoImageSecond: z.string(),
+  frontPage: z.number().optional(),
   sourceCode: z.string(),
   liveSite: z.string(),
   videoShowcase: z.string(),
