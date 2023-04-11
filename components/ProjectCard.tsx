@@ -14,6 +14,7 @@ type Props = {
   noImage?: boolean;
   featured?: boolean;
   layout?: "normal" | "sdraiato";
+  className?: string;
 };
 
 const ProjectCard = ({
@@ -21,9 +22,10 @@ const ProjectCard = ({
   noImage = false,
   featured = false,
   layout = "normal",
+  className = "",
 }: Props) => (
   <article
-    className={`${styles.container} ${
+    className={`${className} ${styles.container} ${
       featured ? styles.featuredContainer : ""
     } ${layout === "sdraiato" ? styles.sdraiato : ""}`}
   >
