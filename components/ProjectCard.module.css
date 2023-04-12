@@ -15,6 +15,11 @@
   border-color: transparent;
 }
 
+.featuredContainer ::selection {
+  background: var(--miku-color-one);
+  color: black;
+}
+
 .container:hover {
   outline-width: 3px;
   outline-color: var(--miku-color-two);
