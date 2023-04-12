@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section className={styles.section} id="contact">
       <div className={styles.container}>
-        <h1 className={styles.title}>Contact</h1>
+        <h1 className="title">Contact</h1>
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.names}>
             <input

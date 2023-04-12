@@ -22,7 +22,7 @@ const Projects = ({ projects }: Props) => {
   return (
     <section className={styles.section} id="projects">
       <div className={styles.container}>
-        <h1 className={styles.title}>Projects I have worked on</h1>
+        <h1 className="title">Projects I have worked on</h1>
 
         <div className={styles.projects}>
           <ProjectCard featured project={projectOne} className={styles.one} />
