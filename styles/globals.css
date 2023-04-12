@@ -40,3 +40,8 @@ a:focus-visible {
   outline: solid 2px var(--miku-color-two);
   outline-offset: 3px;
 }
+
+::selection {
+  background: var(--miku-color-four);
+  color: white;
+}
