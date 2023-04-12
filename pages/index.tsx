@@ -1,10 +1,9 @@
 import Head from "next/head";
 
-import UnderConstruction from "@/components/UnderConstruction";
-
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 import { type Project, getAllProjects } from "@/lib/projects";
 
@@ -29,10 +28,11 @@ const Home = ({ projects }: Props) => {
         <title>4ndrs</title>
         <meta name="description" content="Under construction" />
       </Head>
+
       <Hero />
       <Skills skills={skills} />
       <Projects projects={projects} />
-      <UnderConstruction />
+      <Contact />
     </>
   );
 };
