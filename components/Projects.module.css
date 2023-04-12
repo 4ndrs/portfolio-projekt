@@ -4,7 +4,8 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1156px;
+  /*max-width: 1156px;*/
+  max-width: 1392px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +45,6 @@
   display: grid;
   gap: 21px;
   grid-template-areas:
-    "one two two"
-    "one three four";
+    "one two two two two"
+    "one three three four four";
 }
