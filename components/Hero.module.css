@@ -5,6 +5,7 @@
   justify-content: center;
   min-height: 100vh;
   background-color: var(--dark-background);
+  padding: 0 var(--padding-sides);
 }
 
 .text {
