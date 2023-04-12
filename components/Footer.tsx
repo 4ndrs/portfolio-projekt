@@ -12,6 +12,7 @@ const Footer = () => (
         target="_blank"
         rel="noopener noreferrer"
         href="https://github.com/4ndrs/portfolio-projekt"
+        className={styles.github}
       >
         GitHub
       </a>

@@ -13,3 +13,7 @@
   position: relative;
   top: 3px;
 }
+
+.github {
+  color: var(--miku-color-three);
+}
