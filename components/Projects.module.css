@@ -1,5 +1,6 @@
 .section {
   background-color: var(--grey-color-three);
+  padding: 0 var(--padding-sides);
 }
 
 .container {
