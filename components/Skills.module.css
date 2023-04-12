@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
-  max-width: 1156px;
+  /*max-width: 1156px;*/
+  max-width: 1392px;
   display: flex;
   flex-direction: column;
   align-items: center;
