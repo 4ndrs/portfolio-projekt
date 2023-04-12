@@ -3,8 +3,8 @@ import Link from "next/link";
 import styles from "./Skills.module.css";
 
 const Skills = ({ skills }: { skills: string[] }) => (
-  <section className={styles.section}>
-    <div className={styles.container} id="skill">
+  <section className={styles.section} id="skills">
+    <div className={styles.container}>
       <h1 className={styles.title}>Skills</h1>
       <ul className={styles.skills}>
         {skills.map((skill) => (
