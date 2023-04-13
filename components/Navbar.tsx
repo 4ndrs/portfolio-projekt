@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HamburgerSVG from "./HamburgerSVG";
 
 import styles from "./Navbar.module.css";
 
@@ -16,6 +17,11 @@ const Navbar = () => (
         />
         <span>4ndrs.dev</span>
       </Link>
+
+      <button aria-label="Open menu" className={styles.hamburger}>
+        <HamburgerSVG />
+      </button>
+
       <menu className={styles.menu}>
         <li>
           <Link href="/#skills" scroll={false}>
