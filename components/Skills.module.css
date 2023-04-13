@@ -51,3 +51,11 @@
 .skills ::selection {
   -webkit-text-fill-color: white;
 }
+
+@media (max-width: 753px) {
+  .skill {
+    width: 222px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
