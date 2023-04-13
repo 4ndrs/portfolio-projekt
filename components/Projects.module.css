@@ -40,6 +40,8 @@
   grid-template-areas:
     "one two two"
     "one three four";
+
+  grid-template-columns: 0.9fr 1fr 1fr;
 }
 
 @media (max-width: 1055px) {
