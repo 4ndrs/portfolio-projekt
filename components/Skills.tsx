@@ -13,7 +13,7 @@ const Skills = ({ skills }: { skills: string[] }) => (
               href={`/projects?tag=${encodeURI(skill)}`}
               className={styles.skill}
             >
-              {skill}
+              <span className={styles.text}>{skill}</span>
             </Link>
           </li>
         ))}

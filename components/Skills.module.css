@@ -32,6 +32,10 @@
   border-radius: 8px;
   font-weight: 700;
   font-size: 32px;
+  transition: 150ms ease-in;
+}
+
+.text {
   background: linear-gradient(
     90deg,
     var(--miku-color-two) 10%,
@@ -39,7 +43,6 @@
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 150ms ease-in;
 }
 
 .skill:hover {
