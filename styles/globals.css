@@ -55,7 +55,7 @@ a:focus-visible {
   text-align: center;
 }
 
-@media (max-width: 753px) {
+@media ((max-width: 753px)or (max-height: 397px)) {
   .title {
     font-size: 24px;
   }

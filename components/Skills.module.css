@@ -52,7 +52,7 @@
   -webkit-text-fill-color: white;
 }
 
-@media (max-width: 753px) {
+@media ((max-width: 753px) or (max-height: 397px)) {
   .skill {
     width: 222px;
     height: 60px;

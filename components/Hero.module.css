@@ -50,3 +50,17 @@
     font-size: 26px;
   }
 }
+
+@media (max-height: 397px) {
+  .text {
+    font-size: 26px;
+  }
+  .cta {
+    font-size: 15px;
+  }
+
+  .chevron {
+    width: 53px;
+    height: 19px;
+  }
+}
