@@ -100,3 +100,8 @@
   grid-template-rows: auto min-content auto;
   grid-template-columns: 2fr 1fr;
 }
+
+.sdraiato .image {
+  margin-right: 10px;
+  margin-left: 10px;
+}
