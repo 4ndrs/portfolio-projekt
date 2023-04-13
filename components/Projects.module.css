@@ -41,3 +41,10 @@
     "one two two"
     "one three four";
 }
+
+@media (max-width: 1055px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
