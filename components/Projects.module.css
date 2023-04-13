@@ -38,6 +38,6 @@
   display: grid;
   gap: 21px;
   grid-template-areas:
-    "one two two two two"
-    "one three three four four";
+    "one two two"
+    "one three four";
 }
