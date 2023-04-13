@@ -13,6 +13,7 @@ const useMediaQuery = (query: string) => {
       setMatch(event.matches);
     };
 
+    setMatch(mediaQuery.matches);
     mediaQuery.addEventListener("change", handleEvent);
 
     return () => mediaQuery.removeEventListener("change", handleEvent);
