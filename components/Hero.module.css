@@ -29,3 +29,24 @@
   color: var(--miku-color-three);
   stroke: var(--miku-color-three);
 }
+
+@media (max-width: 753px) {
+  .text {
+    font-size: 32px;
+  }
+
+  .cta {
+    font-size: 15px;
+  }
+
+  .chevron {
+    width: 53px;
+    height: 19px;
+  }
+}
+
+@media (max-width: 412px) {
+  .text {
+    font-size: 26px;
+  }
+}

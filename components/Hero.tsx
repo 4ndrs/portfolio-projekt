@@ -11,7 +11,7 @@ const Hero = () => (
     </h1>
     <Link href="/#skills" scroll={false} className={styles.cta}>
       scroll down
-      <ChevronSVG width={65} height={24} />
+      <ChevronSVG width={65} height={24} className={styles.chevron} />
     </Link>
   </section>
 );
