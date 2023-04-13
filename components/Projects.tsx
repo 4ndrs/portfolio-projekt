@@ -43,13 +43,11 @@ const Projects = ({ projects }: Props) => {
             className={styles.two}
           />
           <ProjectCard
-            noImage
             layout={mediumScreen ? "sdraiato" : "normal"}
             project={projectThree}
             className={styles.three}
           />
           <ProjectCard
-            noImage
             layout={mediumScreen ? "sdraiato" : "normal"}
             project={projectFour}
             className={styles.four}
