@@ -26,6 +26,11 @@
   align-items: center;
   gap: 10px;
   font-size: 20px;
+  color: var(--miku-color-two);
+  stroke: var(--miku-color-two);
+}
+
+.cta:hover {
   color: var(--miku-color-three);
   stroke: var(--miku-color-three);
 }
