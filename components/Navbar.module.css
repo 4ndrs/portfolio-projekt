@@ -39,13 +39,67 @@
   outline-offset: 3px;
 }
 
+.burgerX {
+  overflow: visible;
+  margin-bottom: 26px;
+}
+
+.burgerTop {
+  transform-origin: 10px 5px;
+  transform: rotate(45deg);
+}
+
+.burgerMid {
+  display: none;
+}
+
+.burgerBot {
+  transform-origin: 10px 12px;
+  transform: rotate(-45deg);
+}
+
+.backdrop {
+  display: none;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .miku {
   border-radius: 999px;
 }
 
 @media ((max-width: 753px)or (max-height: 397px)) {
   .menu {
-    display: none;
+    background-color: var(--dark-background);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 190px;
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--padding-top) 16px;
+    gap: 8px;
+    transform: translate(100%);
+    transition: transform 200ms ease-out;
+  }
+
+  .backdrop.open {
+    display: block;
+  }
+
+  .menu.open {
+    transform: translate(0);
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 0;
   }
 
   .navbar {
@@ -54,5 +108,9 @@
 
   .hamburger {
     display: block;
+  }
+
+  .menu > .hamburger {
+    align-self: flex-start;
   }
 }

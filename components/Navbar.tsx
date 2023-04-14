@@ -1,46 +1,81 @@
+import { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 import HamburgerSVG from "./HamburgerSVG";
 
 import styles from "./Navbar.module.css";
 
-const Navbar = () => (
-  <header>
-    <nav className={styles.navbar}>
-      <Link href="/" className={styles.homeLink}>
-        <Image
-          src="/favicon.ico"
-          width={32}
-          height={32}
-          alt="Miku waving hi"
-          className={styles.miku}
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header>
+      <nav className={styles.navbar}>
+        <Link href="/" className={styles.homeLink}>
+          <Image
+            src="/favicon.ico"
+            width={32}
+            height={32}
+            alt="Miku waving hi"
+            className={styles.miku}
+          />
+          <span>4ndrs.dev</span>
+        </Link>
+
+        <button
+          aria-label="Open menu"
+          className={styles.hamburger}
+          onClick={() => setOpen(true)}
+        >
+          <HamburgerSVG />
+        </button>
+
+        <div
+          className={`${styles.backdrop} ${open ? styles.open : ""}`}
+          onClick={() => setOpen(false)}
         />
-        <span>4ndrs.dev</span>
-      </Link>
 
-      <button aria-label="Open menu" className={styles.hamburger}>
-        <HamburgerSVG />
-      </button>
-
-      <menu className={styles.menu}>
-        <li>
-          <Link href="/#skills" scroll={false}>
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link href="/#projects" scroll={false}>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link href="/#contact" scroll={false}>
-            Contact
-          </Link>
-        </li>
-      </menu>
-    </nav>
-  </header>
-);
+        <menu className={`${styles.menu} ${open ? styles.open : ""}`}>
+          <button
+            aria-label="Close menu"
+            className={styles.hamburger}
+            onClick={() => setOpen(false)}
+          >
+            <HamburgerSVG
+              className={styles.burgerX}
+              topClassName={styles.burgerTop}
+              midClassName={styles.burgerMid}
+              botClassName={styles.burgerBot}
+            />
+          </button>
+          <li>
+            <Link href="/#skills" scroll={false} onClick={() => setOpen(false)}>
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/#projects"
+              scroll={false}
+              onClick={() => setOpen(false)}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/#contact"
+              scroll={false}
+              onClick={() => setOpen(false)}
+            >
+              Contact
+            </Link>
+          </li>
+        </menu>
+      </nav>
+    </header>
+  );
+};
 
 export default Navbar;
