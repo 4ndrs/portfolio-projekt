@@ -1,9 +1,37 @@
+import { createPortal } from "react-dom";
+import { useEffect, useState } from "react";
+
+import SendMessage from "./SendMessage";
+
 import styles from "./Contact.module.css";
 
 const Contact = () => {
+  const [open, setOpen] = useState(false);
+  const [closed, setClosed] = useState(true);
+
+  useEffect(() => {
+    if (closed) {
+      setTimeout(() => setOpen(false), 200);
+    } else {
+      setOpen(true);
+    }
+  }, [closed]);
+
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
+
+    setClosed(false);
   };
+
+  const modalDialog =
+    typeof window === "object" ? (
+      createPortal(
+        <SendMessage onClose={() => setClosed(true)} />,
+        document.body
+      )
+    ) : (
+      <></>
+    );
 
   return (
     <section className={styles.section} id="contact">
@@ -30,6 +58,8 @@ const Contact = () => {
           </button>
         </form>
       </div>
+
+      {open && modalDialog}
     </section>
   );
 };

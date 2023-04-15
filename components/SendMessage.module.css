@@ -1,0 +1,38 @@
+.container {
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 686px;
+  height: 333px;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 21px;
+  border-radius: 4px;
+  background-color: white;
+  transform: translate(150%, -50%);
+  transition: transform 200ms ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move {
+  transform: translate(-50%, -50%);
+}
+
+.backdrop {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background-color: black;
+  transition: opacity 200ms ease-out;
+}
+
+.visible {
+  opacity: 0.5;
+}
