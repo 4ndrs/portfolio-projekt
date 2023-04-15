@@ -1,12 +1,11 @@
-import { Inter } from "next/font/google";
+import Head from "next/head";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 import styles from "./Layout.module.css";
-import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
+import { inter } from "@/fonts";
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className={`${inter.className} ${styles.container}`}>
