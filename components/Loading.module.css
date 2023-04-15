@@ -1,0 +1,361 @@
+.container {
+  --duration: 2.8s;
+  --height: -9px;
+
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--miku-color-four);
+}
+
+@media (max-width: 580px) {
+  .container {
+    font-size: 24px;
+  }
+}
+
+.n {
+  display: inline-block;
+  animation: var(--duration) infinite n;
+}
+
+.o {
+  display: inline-block;
+  animation: var(--duration) infinite o;
+}
+
+.w {
+  display: inline-block;
+  animation: var(--duration) infinite w;
+}
+
+.l {
+  display: inline-block;
+  animation: var(--duration) infinite l;
+}
+
+.o2 {
+  display: inline-block;
+  animation: var(--duration) infinite o2;
+}
+
+.a {
+  display: inline-block;
+  animation: var(--duration) infinite a;
+}
+
+.d {
+  display: inline-block;
+  animation: var(--duration) infinite d;
+}
+
+.i {
+  display: inline-block;
+  animation: var(--duration) infinite i;
+}
+
+.n2 {
+  display: inline-block;
+  animation: var(--duration) infinite n2;
+}
+
+.g {
+  display: inline-block;
+  animation: var(--duration) infinite g;
+}
+
+.dot1 {
+  display: inline-block;
+  animation: var(--duration) infinite dot1;
+}
+
+.dot2 {
+  display: inline-block;
+  animation: var(--duration) infinite dot2;
+}
+
+.dot3 {
+  display: inline-block;
+  animation: var(--duration) infinite dot3;
+}
+
+@keyframes n {
+  from {
+    transform: translateY(0);
+  }
+
+  2% {
+    transform: translateY(var(--height));
+  }
+
+  6% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes o {
+  from {
+    transform: translateY(0);
+  }
+
+  4% {
+    transform: translateY(0);
+  }
+
+  9% {
+    transform: translateY(var(--height));
+  }
+
+  12% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes w {
+  from {
+    transform: translateY(0);
+  }
+
+  10% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(var(--height));
+  }
+
+  18% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes l {
+  from {
+    transform: translateY(0);
+  }
+
+  16% {
+    transform: translateY(0);
+  }
+
+  21% {
+    transform: translateY(var(--height));
+  }
+
+  24% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes o2 {
+  from {
+    transform: translateY(0);
+  }
+
+  22% {
+    transform: translateY(0);
+  }
+
+  27% {
+    transform: translateY(var(--height));
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes a {
+  from {
+    transform: translateY(0);
+  }
+
+  28% {
+    transform: translateY(0);
+  }
+
+  33% {
+    transform: translateY(var(--height));
+  }
+
+  36% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes d {
+  from {
+    transform: translateY(0);
+  }
+
+  34% {
+    transform: translateY(0);
+  }
+
+  39% {
+    transform: translateY(var(--height));
+  }
+
+  42% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes i {
+  from {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(0);
+  }
+
+  45% {
+    transform: translateY(var(--height));
+  }
+
+  48% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes n2 {
+  from {
+    transform: translateY(0);
+  }
+
+  46% {
+    transform: translateY(0);
+  }
+
+  51% {
+    transform: translateY(var(--height));
+  }
+
+  54% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes g {
+  from {
+    transform: translateY(0);
+  }
+
+  52% {
+    transform: translateY(0);
+  }
+
+  57% {
+    transform: translateY(var(--height));
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dot1 {
+  from {
+    transform: translateY(0);
+  }
+
+  58% {
+    transform: translateY(0);
+  }
+
+  63% {
+    transform: translateY(var(--height));
+  }
+
+  66% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dot2 {
+  from {
+    transform: translateY(0);
+  }
+
+  64% {
+    transform: translateY(0);
+  }
+
+  69% {
+    transform: translateY(var(--height));
+  }
+
+  72% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dot3 {
+  from {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(var(--height));
+  }
+
+  78% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
