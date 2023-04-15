@@ -10,7 +10,7 @@
   padding: 21px;
   border-radius: 4px;
   background-color: white;
-  transform: translate(150%, -50%);
+  transform: translate(200%, -50%);
   transition: transform 200ms ease-out;
   display: flex;
   align-items: center;
