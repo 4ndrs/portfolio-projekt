@@ -1,5 +1,5 @@
 import { createPortal } from "react-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import SendMessage from "./SendMessage";
 
@@ -7,26 +7,17 @@ import styles from "./Contact.module.css";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
-  const [closed, setClosed] = useState(true);
-
-  useEffect(() => {
-    if (closed) {
-      setTimeout(() => setOpen(false), 200);
-    } else {
-      setOpen(true);
-    }
-  }, [closed]);
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
-    setClosed(false);
+    setOpen(true);
   };
 
   const modalDialog =
     typeof window === "object" ? (
       createPortal(
-        <SendMessage onClose={() => setClosed(true)} />,
+        <SendMessage onClose={() => setOpen(false)} />,
         document.body
       )
     ) : (

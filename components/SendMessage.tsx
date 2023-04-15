@@ -10,14 +10,21 @@ type Props = { onClose: () => void };
 
 const SendMessage = ({ onClose }: Props) => {
   const [visible, setVisible] = useState(false);
+  const [close, setClose] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setVisible(true), 80);
   }, []);
 
+  useEffect(() => {
+    if (close) {
+      setVisible(false);
+      setTimeout(() => onClose(), 200);
+    }
+  }, [close, onClose]);
+
   const handleClose = () => {
-    setVisible(false);
-    onClose();
+    setClose(true);
   };
 
   return (
