@@ -1,23 +1,41 @@
 import { createPortal } from "react-dom";
 import { useState } from "react";
-
 import SendMessage from "./SendMessage";
-
 import styles from "./Contact.module.css";
+
+import type { Data, Status } from "@/interfaces";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
+  const [data, setData] = useState<Data>();
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
+    setData({
+      name: {
+        first: "Ruby",
+        last: "Kurosawa",
+      },
+      email: "ruby@kurosawa",
+      message: "hello",
+    });
+
     setOpen(true);
   };
 
+  const handleClose = (status?: Status) => {
+    setData(undefined);
+
+    console.log("Closed with status: ", status);
+
+    setOpen(false);
+  };
+
   const modalDialog =
-    typeof window === "object" ? (
+    typeof window === "object" && typeof data !== "undefined" ? (
       createPortal(
-        <SendMessage onClose={() => setOpen(false)} />,
+        <SendMessage onClose={handleClose} data={data} />,
         document.body
       )
     ) : (
