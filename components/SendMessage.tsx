@@ -65,7 +65,7 @@ const SendMessage = ({ onClose, data }: Props) => {
         )}
 
         {status && (
-          <button className={styles.button} onClick={handleClose}>
+          <button className={`${styles.button} button`} onClick={handleClose}>
             OK
           </button>
         )}

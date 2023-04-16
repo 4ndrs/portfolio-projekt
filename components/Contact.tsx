@@ -62,7 +62,7 @@ const Contact = () => {
             placeholder="Message"
             className={`${styles.field} ${styles.messageField}`}
           />
-          <button type="submit" className={`${styles.button}`}>
+          <button type="submit" className="button">
             SEND
           </button>
         </form>

@@ -55,6 +55,25 @@ a:focus-visible {
   text-align: center;
 }
 
+.button {
+  width: 216px;
+  height: 51px;
+  align-self: center;
+  margin-top: 7px;
+  color: white;
+  font-family: unset;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--miku-color-four);
+  outline: none;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--miku-color-two);
+  cursor: pointer;
+}
+
 @media ((max-width: 753px)or (max-height: 397px)) {
   .title {
     font-size: 24px;
