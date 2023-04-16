@@ -42,6 +42,10 @@ const SendMessage = ({ onClose, data }: Props) => {
   }, [close, onClose, status]);
 
   const handleClose = () => {
+    if (!status) {
+      return;
+    }
+
     setClose(true);
   };
 
