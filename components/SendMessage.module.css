@@ -46,6 +46,10 @@
   bottom: 21px;
 }
 
+.text {
+  margin-bottom: 51px;
+}
+
 @media (max-width: 580px) {
   .container {
     font-size: 24px;

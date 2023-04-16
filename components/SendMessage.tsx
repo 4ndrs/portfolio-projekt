@@ -55,9 +55,9 @@ const SendMessage = ({ onClose, data }: Props) => {
         {!status ? (
           <Loading />
         ) : status === "OK" ? (
-          <span>Message sent</span>
+          <span className={styles.text}>Message sent</span>
         ) : (
-          <span className={styles.errorText}>
+          <span className={`${styles.errorText} ${styles.text}`}>
             Unable to send the message
             <br />
             Please try again later
