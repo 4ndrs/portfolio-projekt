@@ -69,7 +69,9 @@
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
+  row-gap: 10px;
   list-style-type: none;
   grid-area: tags;
   margin-top: auto;
