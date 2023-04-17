@@ -17,7 +17,7 @@ const SendMessage = ({ onClose, data }: Props) => {
     setTimeout(() => setVisible(true), 80);
 
     const sendData = async () => {
-      const success = Math.random() > 0.3;
+      const success = process.env.NEXT_PUBLIC_SUCCESS;
 
       console.log(data);
 
