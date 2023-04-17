@@ -81,6 +81,7 @@ const Contact = () => {
               <input
                 placeholder="First Name"
                 aria-label="First Name"
+                aria-invalid={errors.name?.first ? "true" : "false"}
                 className={`${styles.field} ${
                   errors.name?.first ? styles.invalid : ""
                 }`}
@@ -97,6 +98,7 @@ const Contact = () => {
               <input
                 placeholder="Last Name"
                 aria-label="Last Name"
+                aria-invalid={errors.name?.last ? "true" : "false"}
                 className={`${styles.field} ${
                   errors.name?.last ? styles.invalid : ""
                 }`}
@@ -114,6 +116,7 @@ const Contact = () => {
             <input
               placeholder="Your Email"
               aria-label="Your Email"
+              aria-invalid={errors.email ? "true" : "false"}
               className={`${styles.field} ${
                 errors.email ? styles.invalid : ""
               }`}
@@ -128,6 +131,7 @@ const Contact = () => {
             <textarea
               placeholder="Message"
               aria-label="Message"
+              aria-invalid={errors.message ? "true" : "false"}
               className={`${styles.field} ${styles.messageField} ${
                 errors.message ? styles.invalid : ""
               }`}
