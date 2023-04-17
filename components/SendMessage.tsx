@@ -69,7 +69,11 @@ const SendMessage = ({ onClose, data }: Props) => {
         )}
 
         {status && (
-          <button className={`${styles.button} button`} onClick={handleClose}>
+          <button
+            autoFocus
+            className={`${styles.button} button`}
+            onClick={handleClose}
+          >
             OK
           </button>
         )}
