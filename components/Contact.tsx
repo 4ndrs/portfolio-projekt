@@ -122,6 +122,7 @@ const Contact = () => {
 
           <div className={styles.fieldContainer}>
             <input
+              type="email"
               id="email"
               placeholder="Your Email"
               aria-label="Your Email"
