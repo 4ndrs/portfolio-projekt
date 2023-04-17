@@ -156,7 +156,7 @@ const Contact = () => {
             )}
           </div>
 
-          <button type="submit" className="button">
+          <button type="submit" className="button" disabled={!!data}>
             SEND
           </button>
         </form>
