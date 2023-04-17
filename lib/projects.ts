@@ -25,9 +25,9 @@ const getAllProjects = () => {
     const fullPath = path.join(directory, filename);
     const content = readFileSync(fullPath, "utf8");
 
-    const metadata = matter(content).data;
+    const data = matter(content);
 
-    return Project.parse(metadata);
+    return Project.parse({ ...data.data, description: data.content });
   });
 
   return projects;

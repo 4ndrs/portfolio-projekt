@@ -73,14 +73,16 @@ const ProjectCard = ({
         </li>
       )}
     </ul>
+
     <h1 className={`${styles.title} ${featured ? styles.featuredText : ""}`}>
       {project.title}
     </h1>
+
     <p
       className={`${styles.description} ${featured ? styles.featuredText : ""}`}
-    >
-      {project.description}
-    </p>
+      dangerouslySetInnerHTML={{ __html: project.description }}
+    />
+
     <ul className={styles.tags}>
       {project.tags.split(", ").map((tag) => (
         <li key={tag}>
