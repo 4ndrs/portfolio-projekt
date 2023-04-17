@@ -79,6 +79,7 @@ const Contact = () => {
           <div className={styles.names}>
             <div className={styles.nameField}>
               <input
+                id="firstName"
                 placeholder="First Name"
                 aria-label="First Name"
                 aria-invalid={errors.name?.first ? "true" : "false"}
@@ -88,14 +89,15 @@ const Contact = () => {
                 {...register("name.first")}
               />
               {errors.name?.first && (
-                <div className={styles.errorMessage}>
+                <label htmlFor="firstName" className={styles.errorMessage}>
                   {errors.name.first.message}
-                </div>
+                </label>
               )}
             </div>
 
             <div className={styles.nameField}>
               <input
+                id="lastName"
                 placeholder="Last Name"
                 aria-label="Last Name"
                 aria-invalid={errors.name?.last ? "true" : "false"}
@@ -105,15 +107,16 @@ const Contact = () => {
                 {...register("name.last")}
               />
               {errors.name?.last && (
-                <div className={styles.errorMessage}>
+                <label htmlFor="lastName" className={styles.errorMessage}>
                   {errors.name.last.message}
-                </div>
+                </label>
               )}
             </div>
           </div>
 
           <div className={styles.fieldContainer}>
             <input
+              id="email"
               placeholder="Your Email"
               aria-label="Your Email"
               aria-invalid={errors.email ? "true" : "false"}
@@ -123,12 +126,15 @@ const Contact = () => {
               {...register("email")}
             />
             {errors.email?.message && (
-              <div className={styles.errorMessage}>{errors.email.message}</div>
+              <label htmlFor="email" className={styles.errorMessage}>
+                {errors.email.message}
+              </label>
             )}
           </div>
 
-          <div className={styles.fieldContainer}>
+          <label className={styles.fieldContainer}>
             <textarea
+              id="message"
               placeholder="Message"
               aria-label="Message"
               aria-invalid={errors.message ? "true" : "false"}
@@ -138,11 +144,11 @@ const Contact = () => {
               {...register("message")}
             />
             {errors.message?.message && (
-              <div className={styles.errorMessage}>
+              <label htmlFor="message" className={styles.errorMessage}>
                 {errors.message.message}
-              </div>
+              </label>
             )}
-          </div>
+          </label>
 
           <button type="submit" className="button">
             SEND
