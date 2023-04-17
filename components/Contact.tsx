@@ -104,8 +104,8 @@ const Contact = () => {
             <div className={styles.nameField}>
               <input
                 id="lastName"
-                placeholder="Last Name"
-                aria-label="Last Name"
+                placeholder="Last Name (optional)"
+                aria-label="Last Name (optional)"
                 aria-invalid={errors.name?.last ? "true" : "false"}
                 className={`${styles.field} ${
                   errors.name?.last ? styles.invalid : ""
