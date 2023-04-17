@@ -36,6 +36,7 @@ type Schema = z.infer<typeof schema>;
 const Contact = () => {
   const [open, setOpen] = useState(false);
   const [data, setData] = useState<Data>();
+  const [showTip, setShowTip] = useState(false);
 
   const {
     reset,
@@ -58,6 +59,8 @@ const Contact = () => {
 
     if (status === "OK") {
       reset();
+    } else {
+      setShowTip(true);
     }
 
     setOpen(false);
@@ -157,6 +160,13 @@ const Contact = () => {
             SEND
           </button>
         </form>
+
+        {showTip && (
+          <span className={styles.tip}>
+            <strong>TIP:</strong> You can also email me directly at{" "}
+            <a href="mailto:me@4ndrs.dev">me@4ndrs.dev</a>
+          </span>
+        )}
       </div>
 
       {open && modalDialog}

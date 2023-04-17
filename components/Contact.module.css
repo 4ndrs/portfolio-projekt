@@ -72,6 +72,22 @@
   margin-left: 3px;
 }
 
+.tip {
+  position: relative;
+  bottom: 50px;
+  font-size: 15px;
+  text-align: center;
+  align-self: center;
+  padding: 15px;
+  color: #313233;
+  background-color: #edf9fa;
+  border-radius: 8px;
+}
+
+.tip > a {
+  color: var(--miku-color-four);
+}
+
 @media (max-width: 555px) {
   .names {
     flex-direction: column;
