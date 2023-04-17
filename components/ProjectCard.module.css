@@ -99,8 +99,12 @@
     "title image"
     "description image"
     "tags links";
-  grid-template-rows: auto min-content auto;
+  grid-template-rows: min-content min-content auto;
   grid-template-columns: 2fr 1fr;
+}
+
+.sdraiato .links {
+  margin-top: auto;
 }
 
 .sdraiato .image {
