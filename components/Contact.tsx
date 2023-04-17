@@ -138,7 +138,7 @@ const Contact = () => {
             )}
           </div>
 
-          <label className={styles.fieldContainer}>
+          <div className={styles.fieldContainer}>
             <textarea
               id="message"
               placeholder="Message"
@@ -154,7 +154,7 @@ const Contact = () => {
                 {errors.message.message}
               </label>
             )}
-          </label>
+          </div>
 
           <button type="submit" className="button">
             SEND
