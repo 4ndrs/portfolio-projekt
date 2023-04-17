@@ -37,29 +37,41 @@ const ProjectCard = ({
       />
     )}
     <ul className={styles.links}>
-      <li>
-        <Link
-          target="_blank"
-          rel="noopener noreferrer"
-          href={project.sourceCode}
-        >
-          <GithubSVG width={25} height={25} />
-        </Link>
-      </li>
-      <li>
-        <Link target="_blank" rel="noopener noreferrer" href={project.liveSite}>
-          <SiteSVG width={25} height={25} />
-        </Link>
-      </li>
-      <li>
-        <Link
-          target="_blank"
-          rel="noopener noreferrer"
-          href={project.videoShowcase}
-        >
-          <VideoSVG width={25} height={25} />
-        </Link>
-      </li>
+      {project.sourceCode && (
+        <li>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href={project.sourceCode}
+          >
+            <GithubSVG width={25} height={25} />
+          </Link>
+        </li>
+      )}
+
+      {project.liveSite && (
+        <li>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href={project.liveSite}
+          >
+            <SiteSVG width={25} height={25} />
+          </Link>
+        </li>
+      )}
+
+      {project.videoShowcase && (
+        <li>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href={project.videoShowcase}
+          >
+            <VideoSVG width={25} height={25} />
+          </Link>
+        </li>
+      )}
     </ul>
     <h1 className={`${styles.title} ${featured ? styles.featuredText : ""}`}>
       {project.title}

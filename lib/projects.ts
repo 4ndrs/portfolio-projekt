@@ -10,9 +10,9 @@ const Project = z.object({
   pseudoImageFirst: z.string(),
   pseudoImageSecond: z.string(),
   frontPage: z.number().optional(),
-  sourceCode: z.string(),
-  liveSite: z.string(),
-  videoShowcase: z.string(),
+  sourceCode: z.string().optional(),
+  liveSite: z.string().optional(),
+  videoShowcase: z.string().optional(),
 });
 
 export type Project = z.infer<typeof Project>;
