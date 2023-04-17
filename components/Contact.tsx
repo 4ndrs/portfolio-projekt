@@ -38,6 +38,7 @@ const Contact = () => {
   const [data, setData] = useState<Data>();
 
   const {
+    reset,
     register,
     handleSubmit,
     formState: { errors },
@@ -55,7 +56,9 @@ const Contact = () => {
   const handleClose = (status?: Status) => {
     setData(undefined);
 
-    console.log("Closed with status: ", status);
+    if (status === "OK") {
+      reset();
+    }
 
     setOpen(false);
   };
