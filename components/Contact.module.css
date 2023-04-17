@@ -16,6 +16,11 @@
   gap: 16px;
 }
 
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .field {
   color: #3a3a3a;
   height: 46px;
@@ -27,8 +32,7 @@
   outline: unset;
 }
 
-.field:focus,
-.button:focus-visible {
+.field:focus {
   outline: solid 3px var(--miku-color-two);
   outline-offset: 3px;
 }
@@ -39,12 +43,33 @@
 }
 
 .nameField {
+  display: flex;
+  flex-direction: column;
   min-width: 200px;
 }
 
 .messageField {
   min-height: 173px;
   resize: none;
+}
+
+.invalid {
+  color: var(--red-color-three);
+  border-color: var(--red-color-three);
+}
+
+.invalid::selection {
+  background-color: var(--red-color-three);
+}
+
+.invalid:focus {
+  outline-color: var(--red-color-three);
+}
+
+.errorMessage {
+  color: var(--red-color-three);
+  margin-top: 8px;
+  margin-left: 3px;
 }
 
 @media (max-width: 555px) {
