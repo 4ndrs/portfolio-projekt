@@ -83,6 +83,12 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
+.button:disabled {
+  color: var(--grey-color-two);
+  background: var(--grey-color-one);
+  cursor: not-allowed;
+}
+
 @media ((max-width: 753px)or (max-height: 397px)) {
   .title {
     font-size: 24px;
