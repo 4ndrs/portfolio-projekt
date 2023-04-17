@@ -78,6 +78,11 @@ a:focus-visible {
   cursor: pointer;
 }
 
+.button:focus-visible {
+  outline: solid 3px var(--miku-color-two);
+  outline-offset: 3px;
+}
+
 @media ((max-width: 753px)or (max-height: 397px)) {
   .title {
     font-size: 24px;
