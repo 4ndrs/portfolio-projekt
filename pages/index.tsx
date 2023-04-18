@@ -20,7 +20,7 @@ export const getStaticProps = async () => {
 type Props = Awaited<ReturnType<typeof getStaticProps>>["props"];
 
 const Home = ({ projects }: Props) => {
-  const skills = getSkills(projects);
+  const skills = getAllTags(projects);
 
   return (
     <>
@@ -40,7 +40,7 @@ const Home = ({ projects }: Props) => {
   );
 };
 
-const getSkills = (projects: Project[]) => {
+const getAllTags = (projects: Project[]) => {
   const tagsMap: { [id: string]: number } = {};
 
   projects.forEach((project) => {
@@ -54,9 +54,9 @@ const getSkills = (projects: Project[]) => {
     });
   });
 
-  const skills = Object.keys(tagsMap).sort((a, b) => tagsMap[b] - tagsMap[a]);
+  const tags = Object.keys(tagsMap).sort((a, b) => tagsMap[b] - tagsMap[a]);
 
-  return skills;
+  return tags;
 };
 
 export default Home;
