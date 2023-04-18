@@ -51,6 +51,11 @@ a:focus-visible {
   color: white;
 }
 
+.main {
+  align-self: stretch;
+  margin-bottom: auto;
+}
+
 .title {
   color: var(--grey-color-two);
   margin-top: 40px;

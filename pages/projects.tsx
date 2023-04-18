@@ -25,7 +25,7 @@ const Projects = ({ projects }: Props) => {
         <title>Projects</title>
         <meta name="description" content="under construction" />
       </Head>
-      <main>
+      <main className="main">
         <ProjectsHero />
         <div className={styles.projects}>
           {projects.map((project) => (

@@ -33,7 +33,7 @@ const Home = ({ projects }: Props) => {
         />
       </Head>
 
-      <main>
+      <main className="main">
         <Hero />
         <Skills skills={skills} />
         <Projects projects={projects} />
