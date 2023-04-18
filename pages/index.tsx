@@ -5,7 +5,8 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
-import { type Project, getAllProjects } from "@/lib/projects";
+import { getAllProjects } from "@/lib/projects";
+import { getAllTags } from "@/utils";
 
 export const getStaticProps = async () => {
   const projects = getAllProjects();
@@ -38,25 +39,6 @@ const Home = ({ projects }: Props) => {
       <Contact />
     </>
   );
-};
-
-const getAllTags = (projects: Project[]) => {
-  const tagsMap: { [id: string]: number } = {};
-
-  projects.forEach((project) => {
-    project.tags.split(", ").forEach((tag) => {
-      if (tag in tagsMap) {
-        tagsMap[tag] += 1;
-        return;
-      }
-
-      tagsMap[tag] = 0;
-    });
-  });
-
-  const tags = Object.keys(tagsMap).sort((a, b) => tagsMap[b] - tagsMap[a]);
-
-  return tags;
 };
 
 export default Home;
