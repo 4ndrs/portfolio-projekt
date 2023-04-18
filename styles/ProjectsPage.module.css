@@ -1,0 +1,12 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+  row-gap: 88px;
+  margin: 108px 38px 200px;
+  justify-content: center;
+}
+
+.projects > * {
+  max-width: 382px;
+}
