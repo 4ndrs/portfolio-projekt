@@ -26,7 +26,10 @@ const Home = ({ projects }: Props) => {
     <>
       <Head>
         <title>4ndrs</title>
-        <meta name="description" content="Under construction" />
+        <meta
+          name="description"
+          content="Hi! This is my personal website where I list some of my projects. On this page you can find a brief overview of the stuff I have worked on, and a contact form to reach me out."
+        />
       </Head>
 
       <Hero />
