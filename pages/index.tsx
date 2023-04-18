@@ -33,10 +33,12 @@ const Home = ({ projects }: Props) => {
         />
       </Head>
 
-      <Hero />
-      <Skills skills={skills} />
-      <Projects projects={projects} />
-      <Contact />
+      <main>
+        <Hero />
+        <Skills skills={skills} />
+        <Projects projects={projects} />
+        <Contact />
+      </main>
     </>
   );
 };
