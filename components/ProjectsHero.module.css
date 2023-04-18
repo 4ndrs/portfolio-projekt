@@ -1,0 +1,27 @@
+.container {
+  background-color: var(--dark-background);
+}
+
+.title {
+  color: white;
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+
+.highlight {
+  color: var(--miku-color-five);
+}
+
+.oceanWaves {
+  fill: var(--dark-background);
+}
+
+@media (max-width: 753px) {
+  .title {
+    font-size: 36px;
+    padding-top: 130px;
+  }
+}
