@@ -1,0 +1,101 @@
+.container {
+  --container-height: 61px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 48px;
+  min-height: var(--container-height);
+  padding: 15px 27px;
+  border: solid 3px var(--grey-color-one);
+  border-radius: 48px;
+  outline: unset;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--grey-color-four);
+  cursor: pointer;
+}
+
+.container:focus,
+.container:focus-within {
+  border-color: var(--miku-color-two);
+}
+
+.container:focus .tagsContainer,
+.container:focus-within .tagsContainer {
+  display: flex;
+}
+
+.checkedTagsContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.checkedTagsContainer > ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.checkedTagsContainer li {
+  padding: 3px 13px;
+  color: white;
+  background-color: var(--miku-color-two);
+  border-radius: 28px;
+}
+
+.triangle:after {
+  display: block;
+  position: relative;
+  top: 7px;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: 15px;
+  border: 10px solid transparent;
+  border-top-color: var(--grey-color-one);
+}
+
+.tagsContainer {
+  position: absolute;
+  width: 250px;
+  margin-top: 10px;
+  right: 0;
+  left: 0;
+  transform: translateX(-13%);
+  top: var(--container-height);
+  list-style-type: none;
+  background-color: white;
+  border-radius: 28px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.tagsContainer > * {
+  flex: 1 1 0;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tag > input {
+  visibility: hidden;
+}
+
+.tag:focus {
+  background-color: var(--miku-color-two);
+  color: white;
+}
+
+.checked {
+  background-color: var(--miku-color-two);
+  color: white;
+}
