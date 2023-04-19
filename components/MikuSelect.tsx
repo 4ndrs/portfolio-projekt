@@ -36,6 +36,7 @@ const MikuSelect = ({ className, tags, checkedTags, onChange }: Props) => {
           {tags.map((tag) => (
             <li key={tag}>
               <label
+                tabIndex={0}
                 className={`${styles.tag} ${
                   checkedTags.includes(tag) ? styles.checked : ""
                 }`}
