@@ -92,7 +92,10 @@
   visibility: hidden;
 }
 
-.tag:focus,
+.tag:focus-visible {
+  outline: solid 3px var(--miku-color-three);
+}
+
 .checked {
   background-color: var(--miku-color-two);
   color: white;
