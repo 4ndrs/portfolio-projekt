@@ -90,11 +90,7 @@
   visibility: hidden;
 }
 
-.tag:focus {
-  background-color: var(--miku-color-two);
-  color: white;
-}
-
+.tag:focus,
 .checked {
   background-color: var(--miku-color-two);
   color: white;
