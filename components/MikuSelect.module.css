@@ -87,6 +87,7 @@
 }
 
 .tag > input {
+  position: absolute;
   visibility: hidden;
 }
 
