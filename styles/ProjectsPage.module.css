@@ -10,3 +10,9 @@
 .projects > * {
   max-width: 382px;
 }
+
+.filterContainer {
+  margin: 68px auto 0;
+  max-width: 724px;
+  padding: 0 38px;
+}
