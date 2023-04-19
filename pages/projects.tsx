@@ -53,8 +53,12 @@ const Projects = ({ projects, tags }: Props) => {
     <>
       <Head>
         <title>Projects</title>
-        <meta name="description" content="under construction" />
+        <meta
+          name="description"
+          content="On this page all the projects I have worked on are listed."
+        />
       </Head>
+
       <main className="main">
         <ProjectsHero />
 
