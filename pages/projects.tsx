@@ -55,6 +55,7 @@ const Projects = ({ projects }: Props) => {
         <div className={styles.filterContainer}>
           <SearchBar
             ref={searchInputRef}
+            aria-label="Search for projects"
             placeholder="Search for projects..."
             value={search}
             onChange={(event) => setSearch(event.target.value)}
