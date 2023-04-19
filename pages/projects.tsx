@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import Head from "next/head";
 import ProjectsHero from "@/components/ProjectsHero";
@@ -10,6 +10,7 @@ import { getAllProjects } from "@/lib/projects";
 import { getAllTags } from "@/utils";
 
 import styles from "@/styles/ProjectsPage.module.css";
+import { useRouter } from "next/router";
 
 export const getStaticProps = async () => {
   const projects = getAllProjects();
@@ -27,10 +28,22 @@ type Props = Awaited<ReturnType<typeof getStaticProps>>["props"];
 
 const Projects = ({ projects, tags }: Props) => {
   const [search, setSearch] = useState("");
-  const [checkedTags, setCheckedTags] = useState<string[]>(["TypeScript"]);
+  const [checkedTags, setCheckedTags] = useState<string[]>([]);
 
   const searchInputRef = useRef<HTMLInputElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
+
+  const query = useRouter().query;
+
+  useEffect(() => {
+    if (
+      "tag" in query &&
+      typeof query.tag === "string" &&
+      tags.includes(query.tag)
+    ) {
+      setCheckedTags([query.tag]);
+    }
+  }, [query, tags]);
 
   const handleSearchKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === "Enter" && searchInputRef.current) {
