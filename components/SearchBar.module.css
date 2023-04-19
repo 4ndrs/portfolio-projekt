@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 61px;
+  padding: 15px 27px;
+  border: solid 3px var(--grey-color-one);
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.container:focus-within {
+  border-color: var(--miku-color-two);
+}
+
+.container > input {
+  border: unset;
+  outline: unset;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: inherit;
+  margin-left: 19px;
+  color: var(--dark-background);
+  background-color: unset;
+  min-width: 0;
+  flex: 1;
+  appearance: unset;
+}
+
+.container > input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.container > svg {
+  fill: var(--dark-background);
+}
