@@ -16,6 +16,16 @@ const MikuSelect = ({ className, tags, checkedTags, onChange }: Props) => {
     return onChange([...checkedTags, tag]);
   };
 
+  const handleKeyDown = (
+    event: React.KeyboardEvent<HTMLLabelElement>,
+    tag: string
+  ) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      handleChange(tag);
+    }
+  };
+
   return (
     <>
       <div className={`${className} ${styles.container}`} tabIndex={0}>
@@ -37,6 +47,7 @@ const MikuSelect = ({ className, tags, checkedTags, onChange }: Props) => {
             <li key={tag}>
               <label
                 tabIndex={0}
+                onKeyDown={(event) => handleKeyDown(event, tag)}
                 className={`${styles.tag} ${
                   checkedTags.includes(tag) ? styles.checked : ""
                 }`}
