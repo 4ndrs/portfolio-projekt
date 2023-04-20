@@ -62,9 +62,9 @@
   position: absolute;
   width: 250px;
   margin-top: 10px;
-  right: 0;
-  left: 0;
-  transform: translateX(-13%);
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   top: var(--container-height);
   list-style-type: none;
   background-color: white;
