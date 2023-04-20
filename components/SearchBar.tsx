@@ -1,16 +1,32 @@
-import { forwardRef } from "react";
+import { forwardRef, useImperativeHandle, useRef } from "react";
 import SearchSVG from "@/components/SearchSVG";
 
 import styles from "./SearchBar.module.css";
 
+import type { SearchBarElement } from "@/interfaces";
+
 type InputProps = React.ComponentPropsWithoutRef<"input">;
 
-const SearchBar = forwardRef<HTMLInputElement, InputProps>((props, ref) => (
-  <div className={styles.container}>
-    <SearchSVG width="31" height="31" />
-    <input ref={ref} type="search" {...props} />
-  </div>
-));
+const SearchBar = forwardRef<SearchBarElement, InputProps>((props, ref) => {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useImperativeHandle(
+    ref,
+    () => ({
+      blur() {
+        inputRef.current?.blur();
+      },
+    }),
+    []
+  );
+
+  return (
+    <div className={styles.container}>
+      <SearchSVG width="31" height="31" />
+      <input ref={inputRef} type="search" {...props} />
+    </div>
+  );
+});
 
 SearchBar.displayName = "SearchBar";
 

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 
 import Head from "next/head";
 import ProjectsHero from "@/components/ProjectsHero";
@@ -10,7 +11,8 @@ import { getAllProjects } from "@/lib/projects";
 import { getAllTags } from "@/utils";
 
 import styles from "@/styles/ProjectsPage.module.css";
-import { useRouter } from "next/router";
+
+import type { SearchBarElement } from "@/interfaces";
 
 export const getStaticProps = async () => {
   const projects = getAllProjects();
@@ -30,7 +32,7 @@ const Projects = ({ projects, tags }: Props) => {
   const [search, setSearch] = useState("");
   const [checkedTags, setCheckedTags] = useState<string[]>([]);
 
-  const searchInputRef = useRef<HTMLInputElement>(null);
+  const searchInputRef = useRef<SearchBarElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
 
   const query = useRouter().query;

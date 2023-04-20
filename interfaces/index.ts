@@ -4,4 +4,8 @@ export interface Data {
   message: string;
 }
 
+export interface SearchBarElement {
+  blur: () => void;
+}
+
 export type Status = "OK" | "ERROR";
