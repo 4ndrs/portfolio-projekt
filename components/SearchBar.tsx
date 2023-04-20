@@ -21,7 +21,7 @@ const SearchBar = forwardRef<SearchBarElement, InputProps>((props, ref) => {
   );
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={() => inputRef.current?.focus()}>
       <SearchSVG width="31" height="31" />
       <input ref={inputRef} type="search" {...props} />
     </div>

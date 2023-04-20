@@ -8,6 +8,10 @@
   overflow: hidden;
 }
 
+.container:hover {
+  cursor: text;
+}
+
 .container:focus-within {
   border-color: var(--miku-color-two);
 }
