@@ -33,6 +33,7 @@ const ProjectCard = ({
       <PseudoImageSVG
         first={project.pseudoImageFirst}
         second={project.pseudoImageSecond}
+        fontSize={project.pseudoImageFontSize}
         className={styles.image}
       />
     )}
