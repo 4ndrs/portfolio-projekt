@@ -2,7 +2,8 @@
 title: Delete Thumbnail
 tags: TypeScript, Node.js
 pseudoImageFirst: Delete
-pseudoImageSecond: Thumb
+pseudoImageSecond: Thumbnail
+pseudoImageFontSize: 32px
 sourceCode: https://github.com/4ndrs/delete-thumbnail
 ---
 Command line utility to delete specific thumbnails from the local cache directory.
