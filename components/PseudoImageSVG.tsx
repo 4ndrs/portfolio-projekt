@@ -7,7 +7,12 @@ type Props = {
   [id: string]: SVGProps[keyof SVGProps];
 };
 
-const PseudoImageSVG = ({ first, second, fontSize, ...otherProps }: Props) => (
+const PseudoImageSVG = ({
+  first,
+  second,
+  fontSize = "38px",
+  ...otherProps
+}: Props) => (
   <svg fill="black" stroke="black" viewBox="0 0 295 190" {...otherProps}>
     <rect width="100%" height="100%" fill="white" stroke="white" />
     <text
@@ -15,7 +20,7 @@ const PseudoImageSVG = ({ first, second, fontSize, ...otherProps }: Props) => (
       x="50%"
       y="50%"
       textAnchor="middle"
-      fontSize={fontSize || "36px"}
+      fontSize={fontSize}
       fontWeight="700"
     >
       <tspan fill="#000" stroke="#000">
