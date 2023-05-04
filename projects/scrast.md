@@ -3,7 +3,6 @@ title: Scrast
 tags: TypeScript, Node.js
 pseudoImageFirst: Scr
 pseudoImageSecond: ast
-frontPage: 3
 sourceCode: https://github.com/4ndrs/scrast
 ---
 Command line utility to record the screen on Linux.

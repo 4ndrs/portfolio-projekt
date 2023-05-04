@@ -3,7 +3,7 @@ title: Portfolio Projekt
 tags: TypeScript, CSS, HTML, React, Node.js, Next.js
 pseudoImageFirst: Portfolio
 pseudoImageSecond: Projekt
-frontPage: 1
+frontPage: 3
 sourceCode: https://github.com/4ndrs/portfolio-projekt
 liveSite: https://4ndrs.dev/
 ---
