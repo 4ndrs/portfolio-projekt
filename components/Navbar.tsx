@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
+import Migu from "@/app/icon.ico";
 import HamburgerSVG from "./HamburgerSVG";
 
 import styles from "./Navbar.module.css";
@@ -16,7 +17,7 @@ const Navbar = () => {
       <nav className={styles.navbar}>
         <Link href="/" className={styles.homeLink}>
           <Image
-            src="/favicon.ico"
+            src={Migu}
             width={32}
             height={32}
             alt="Miku waving hi"
