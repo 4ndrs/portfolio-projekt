@@ -1,7 +1,10 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
+
 import Loading from "./Loading";
 
 import styles from "./SendMessage.module.css";
+
 import { inter } from "@/fonts";
 
 import type { Data, Status } from "@/interfaces";
@@ -17,16 +20,12 @@ const SendMessage = ({ onClose, data }: Props) => {
     setTimeout(() => setVisible(true), 80);
 
     const sendData = async () => {
-      const success = process.env.NEXT_PUBLIC_SUCCESS;
-
-      console.log(data);
-
-      if (success) {
+      try {
+        await axios.post("/api/send", data);
         setStatus("OK");
-        return;
+      } catch (error) {
+        setStatus("ERROR");
       }
-
-      setStatus("ERROR");
     };
 
     const id = setTimeout(sendData, 3000);
