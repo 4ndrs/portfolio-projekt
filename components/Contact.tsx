@@ -4,36 +4,12 @@ import { createPortal } from "react-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
 
 import SendMessage from "./SendMessage";
 
 import styles from "./Contact.module.css";
 
-import type { Data, Status } from "@/interfaces";
-
-const schema = z.object({
-  name: z.object({
-    first: z
-      .string()
-      .min(1, { message: "Required" })
-      .max(60, { message: "Maximum character limit is 60" }),
-    last: z
-      .string()
-      .max(60, { message: "Maximum character limit is 60" })
-      .optional(),
-  }),
-  email: z
-    .string()
-    .email()
-    .max(60, { message: "Maximum character limit is 60" }),
-  message: z
-    .string()
-    .min(5, { message: "Minimum character limit is 5" })
-    .max(5000, { message: "Maximum character limit is 5000" }),
-});
-
-type Schema = z.infer<typeof schema>;
+import { type Data, type Status, DataSchema } from "@/interfaces";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
@@ -45,9 +21,9 @@ const Contact = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<Schema>({
+  } = useForm<Data>({
     mode: "onBlur",
-    resolver: zodResolver(schema),
+    resolver: zodResolver(DataSchema),
   });
 
   const onSubmit = handleSubmit((data) => {
