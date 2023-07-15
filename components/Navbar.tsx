@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 import Image from "next/image";
@@ -50,25 +52,17 @@ const Navbar = () => {
             />
           </button>
           <li>
-            <Link href="/#skills" scroll={false} onClick={() => setOpen(false)}>
+            <Link href="/#skills" onClick={() => setOpen(false)}>
               Skills
             </Link>
           </li>
           <li>
-            <Link
-              href="/#projects"
-              scroll={false}
-              onClick={() => setOpen(false)}
-            >
+            <Link href="/#projects" onClick={() => setOpen(false)}>
               Projects
             </Link>
           </li>
           <li>
-            <Link
-              href="/#contact"
-              scroll={false}
-              onClick={() => setOpen(false)}
-            >
+            <Link href="/#contact" onClick={() => setOpen(false)}>
               Contact
             </Link>
           </li>

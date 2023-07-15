@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 
@@ -12,7 +14,7 @@ type Props = { projects: Project[] };
 const Projects = ({ projects }: Props) => {
   const smolScreen = useMediaQuery("(max-width: 660px)");
   const mediumScreen = useMediaQuery(
-    "(min-width: 661px) and (max-width: 1055px)"
+    "(min-width: 661px) and (max-width: 1055px)",
   );
 
   const projectsToShow = projects

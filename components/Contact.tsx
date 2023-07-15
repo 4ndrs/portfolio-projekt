@@ -1,3 +1,5 @@
+"use client";
+
 import { createPortal } from "react-dom";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
@@ -70,7 +72,7 @@ const Contact = () => {
     typeof window === "object" && typeof data !== "undefined" ? (
       createPortal(
         <SendMessage onClose={handleClose} data={data} />,
-        document.body
+        document.body,
       )
     ) : (
       <></>
