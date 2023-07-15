@@ -1,6 +1,6 @@
 ---
 title: Mikus
-tags: TypeScript, HTML, React, Next.js, Tailwind
+tags: TypeScript, HTML, React, Next.js, Tailwind, Miku
 pseudoImageFirst: Mikus
 pseudoImageSecond: Mikus
 pseudoImageFontSize: 32px

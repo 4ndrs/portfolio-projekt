@@ -1,6 +1,6 @@
 ---
 title: Portfolio Projekt
-tags: TypeScript, CSS, HTML, React, Node.js, Next.js
+tags: TypeScript, CSS, HTML, React, Node.js, Next.js, Miku
 pseudoImageFirst: Portfolio
 pseudoImageSecond: Projekt
 frontPage: 4
