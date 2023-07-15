@@ -15,7 +15,7 @@ export const POST = async (request: NextRequest) => {
     const response = await resend.emails.send({
       from: "Miku <miku@updates.4ndrs.dev>",
       to: ["me@4ndrs.dev"],
-      subject: "新メッセージが",
+      subject: `${data.name.first}からの新メッセージ`,
       react: EmailTemplate(data),
     });
 
