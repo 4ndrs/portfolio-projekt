@@ -3,7 +3,6 @@ title: Cute Lemon
 tags: TypeScript, CSS, HTML, React, Jest
 pseudoImageFirst: Cute
 pseudoImageSecond: Lemon
-frontPage: 4
 sourceCode: https://github.com/4ndrs/cute-lemon
 liveSite: https://4ndrs.github.io/cute-lemon/
 ---
