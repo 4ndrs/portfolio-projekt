@@ -8,6 +8,7 @@ import { inter } from "@/fonts";
 import styles from "@/components/Layout.module.css";
 
 import "@/styles/globals.css";
+import MikuBirthdaySpecial from "@/components/MikuBirthdaySpecial";
 
 export const metadata: Metadata = {
   themeColor: "#2d858d",
@@ -19,6 +20,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
       <Navbar />
       {children}
       <Footer />
+      <MikuBirthdaySpecial />
     </body>
   </html>
 );
