@@ -4,6 +4,7 @@ tags: TypeScript, React
 pseudoImageFirst: Dokodemo
 pseudoImageSecond: AniList
 pseudoImageFontSize: 32px
+frontPage: 1
 sourceCode: https://github.com/4ndrs/placeneko
 liveSite: https://addons.mozilla.org/en-US/firefox/addon/dokodemo-anilist/
 ---
