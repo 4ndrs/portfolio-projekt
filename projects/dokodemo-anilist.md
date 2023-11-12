@@ -1,6 +1,6 @@
 ---
 title: Dokodemo Anilist (Unofficial)
-tags: TypeScript, React
+tags: TypeScript, React, Tailwind
 pseudoImageFirst: Dokodemo
 pseudoImageSecond: AniList
 pseudoImageFontSize: 32px
