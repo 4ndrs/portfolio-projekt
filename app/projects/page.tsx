@@ -1,6 +1,7 @@
 import ProjectsHero from "@/components/ProjectsHero";
 import ContentContainer from "./components/content-container";
 
+import { use } from "react";
 import { getAllProjects } from "@/lib/projects";
 import { getAllTags } from "@/utils";
 
@@ -14,11 +15,11 @@ export const metadata: Metadata = {
 const projects = getAllProjects();
 const tags = getAllTags(projects);
 
-const Projects = ({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined };
+const Projects = (props: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) => {
+  const searchParams = use(props.searchParams);
+
   return (
     <main className="main">
       <ProjectsHero />
