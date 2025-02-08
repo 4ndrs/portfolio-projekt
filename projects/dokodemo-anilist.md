@@ -4,8 +4,8 @@ tags: TypeScript, React, Tailwind
 pseudoImageFirst: Dokodemo
 pseudoImageSecond: AniList
 pseudoImageFontSize: 32px
-frontPage: 1
-sourceCode: https://github.com/4ndrs/placeneko
+frontPage: 3
+sourceCode: https://github.com/4ndrs/dokodemo-anilist
 liveSite: https://addons.mozilla.org/en-US/firefox/addon/dokodemo-anilist/
 ---
 A web extension to search for anime, manga, characters, staff, and studios using the AniList's API.

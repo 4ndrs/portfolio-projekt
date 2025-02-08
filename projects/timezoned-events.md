@@ -4,7 +4,7 @@ tags: TypeScript, CSS, HTML, React, Next.js
 pseudoImageFirst: Timezoned
 pseudoImageSecond: Events
 pseudoImageFontSize: 32px
-frontPage: 3
+frontPage: 4
 sourceCode: https://github.com/4ndrs/timezoned-events
 liveSite: https://events.daia.love/
 ---
